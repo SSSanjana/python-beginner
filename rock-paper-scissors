@@ -1,0 +1,14 @@
+import random
+a1 = input("rock paper scissor\n")
+a2 = random.choice(["rock","paper","scissor"])
+if a1 == "scissor" and a2 == "rock":
+    print(a2,":try again")
+elif a1 == "rock" and a2 == "paper":
+    print(a2,":try again")
+elif a1 == "paper" and a2 == "scissor":
+    print(a2,":try again")
+elif a1 == a2:
+    print(a2,":tie")
+else:
+    print(a2,":you won")
+    
